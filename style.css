@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+.nav {
+  padding: 1em;
+  border-bottom: solid 2px black;
+  margin-bottom: 1rem;
+}
+
+.logo a {
+  color: black;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-item a {
+  color: black;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-item a:hover {
+  font-weight: bold;
+}
+
+.nav-item a::before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* Lasagna Page */
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 1em;
+}
+
+.content {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.content p {
+  margin: 1em 0;
+}
